@@ -1,0 +1,190 @@
+/*Main grid*/
+
+body {
+    display: grid;
+    grid-template-areas:
+                        "nav"
+                        "main"
+                        "foot";
+    background-color: #efe0d4;
+    margin: 0;
+    position: relative;
+}
+
+header {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+    text-align: center;
+
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    height: 100%;
+}
+
+/* Navigation menu + dropdown */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightslategrey;
+    color: black;
+    list-style-type: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownmenu {
+
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    background-color: burlywood;
+    z-index: 1;
+}
+
+.dropdownmenu li {
+    display: block;
+    list-style-type: none;
+}
+
+.dropdown:hover .dropdownmenu {
+    display: block;
+}
+
+/* Breadcrumb */
+
+.bc {
+    list-style-type: none;
+}
+
+
+
+/* Hide items */
+
+.hidden {
+    display: none;
+}
+
+/* Footer stays at bottom of page */
+
+
+
+/* banner */
+
+.banner {
+    text-align: center;
+    font-size: 150%;
+    border: 3px solid black;
+}
+
+/* Product Page */
+
+.japanese, .korean {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.chinese {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.japanese h3, .korean h3, .chinese h3 {
+    flex: 0 0 100%;
+    font-size: 200%;
+    color: lightslategrey;
+}
+
+.shop {
+    color: darkslategray;
+    text-align: center;
+}
+
+.audio {
+    margin-left: 85%;
+}
+
+.manga {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+
+}
+.text {
+    margin-top: 140px;
+}
+
+/* Filter */
+
+.filterPrice {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.filterPrice input {
+    width: 150px;
+    height: 50px;
+    background-color: lightslategrey;
+}
+
+/* FAQ */
+
+.faq {
+    text-align: center;
+}
+
+/* Contact */
+
+.adres {
+    float: right;
+    margin-bottom: 200px;
+    margin-right: 200px;
+}
+
+.cntct_logo {
+    float: right;
+    margin-top: 85px;
+    margin-right: 200px;
+    color: #efe0d4;
+}
+
+.cntct {
+    margin-left: 50px;
+    margin-top: 150px;
+    font-size: 150%;
+}
+
+
+footer {
+    margin-top: 10%;
+
+}
